@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyChatApp</string>
+    <string name="mychatapp">MyChatApp</string>
+    <string name="from">from</string>
+    <string name="chat_app_will_send_otp_to_your_number">Chat App will send OTP to your number</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+<ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/logo"
+    tools:ignore="ContentDescription,MissingPrefix">
+  </ImageView>
+
+
+    <TextView
+        android:id="@+id/textheading"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="0dp"
+        android:padding="20dp"
+        android:text="@string/chat_app_will_send_otp_to_your_number"
+        android:textAlignment="center"
+        android:textColor="#6e6e6e"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/centerhorizontalline">
+    </RelativeLayout>
+
+
+  <com.hbb20.CountryCodePicker
+
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_centerInParent="true"
+      android:layout_marginLeft="100dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginRight="100dp"
+      android:layout_marginBottom="10dp"
+      app:ccp_areaCodeDetectedCountry="true"
+      app:ccp_autoDetectCountry="true"
+      android:id="@+id/countrycodepicker"
+
+      >
+
+  </com.hbb20.CountryCodePicker>
+
+
+    <EditText
+        android:id="@+id/getphonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/centerhorizontalline"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="70dp"
+        android:hint="Enter Your phone number here"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText"
+        android:importantForAutofill="no">
+
+    </EditText>
+
+    <android.widget.Button
+        android:id="@+id/sendotpbutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/getphonenumber"
+        android:layout_marginTop="29dp"
+        android:background="#25d366"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Sent OTP"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText">
+    </android.widget.Button>
+
+    <ProgressBar
+        android:id="@+id/progressbarofmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendotpbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-114dp"
+        android:layout_marginEnd="353dp"
+        android:visibility="visible">
+    </ProgressBar>
+
+
+    </RelativeLayout>
