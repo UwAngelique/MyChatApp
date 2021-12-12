@@ -5,20 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".setprofile">
+
   <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:id="@+id/logo"
-        tools:ignore="ContentDescription,MissingPrefix">
-    </ImageView>
+      android:id="@+id/getuserimageinimageview"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="100dp"
+      android:src="@drawable/ic_launcher_background"
+      >
+
+  </ImageView>
 
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="match_parent"
-      android:layout_below="@+id/logo"
       android:layout_marginLeft="110dp"
       android:layout_marginTop="-184dp"
       android:text="Save Your Profile"
@@ -48,22 +49,26 @@
       android:id="@+id/SaveProfile"
       android:layout_width="150dp"
       android:layout_height="50dp"
-      android:layout_below="@+id/getusername"
+      android:layout_below="@+id/getuserimage"
       android:layout_alignParentEnd="true"
       android:layout_marginLeft="90dp"
-      android:layout_marginTop="61dp"
+      android:layout_marginTop="300dp"
       android:layout_marginEnd="128dp"
       android:background="#25d366"
       android:text="Save Profile"
-      android:textColor="@color/white">
+      android:textColor="@color/white"
+      tools:ignore="UnknownId">
+
 
   </android.widget.Button>
 
   <ProgressBar
       android:id="@+id/progressbarofsetProfile"
+      android:layout_below="@+id/SaveProfile"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:visibility="invisible">
+      android:visibility="invisible"
+      tools:ignore="UnknownId">
 
   </ProgressBar>
 
