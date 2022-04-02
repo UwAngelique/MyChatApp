@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".MainActivity">
-<ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:id="@+id/logo"
-    tools:ignore="ContentDescription,MissingPrefix">
-  </ImageView>
+
+  <ImageView
+      android:id="@+id/logo"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="90dp"
+      android:src="@drawable/ic_message_24"
+      android:background="@color/purple_700"
+      tools:ignore="ContentDescription,MissingPrefix"></ImageView>
 
 
   <TextView
@@ -22,7 +23,7 @@
       android:layout_width="wrap_content"
       android:layout_height="match_parent"
       android:layout_below="@+id/logo"
-      android:layout_marginTop="0dp"
+      android:layout_marginTop="50dp"
       android:padding="20dp"
       android:text="@string/chat_app_will_send_otp_to_your_number"
       android:textAlignment="center"
@@ -62,7 +63,7 @@
       android:layout_height="50dp"
       android:layout_below="@id/centerhorizontalline"
       android:layout_marginLeft="70dp"
-      android:layout_marginTop="348dp"
+      android:layout_marginTop="390dp"
       android:layout_marginRight="70dp"
       android:hint="Enter Your phone number here"
       android:importantForAutofill="no"
@@ -70,8 +71,7 @@
       android:textAlignment="center"
       android:textColor="@color/black"
       tools:ignore="HardcodedText">
-
-  </EditText>
+</EditText>
 
   <android.widget.Button
       android:id="@+id/sendotpbutton"
@@ -79,7 +79,7 @@
       android:layout_height="40dp"
       android:layout_below="@id/getphonenumber"
       android:layout_marginTop="38dp"
-      android:background="#25d366"
+      android:background="@color/purple_700"
       android:paddingLeft="40dp"
       android:paddingRight="40dp"
       android:text="Sent OTP"
