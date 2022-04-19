@@ -44,7 +44,7 @@ public class ChatActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_container,
-                    new ChatFragment()).commit();
+                    new Chatfragment()).commit();
             navigationView.setCheckedItem(R.id.nav_chat);
         }
 
@@ -67,7 +67,7 @@ public class ChatActivity extends AppCompatActivity implements NavigationView.On
             switch (item.getItemId()) {
                 case R.id.nav_chat:
                     getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_container,
-                            new ChatFragment()).commit();
+                            new Chatfragment()).commit();
                     navigationView.setVisibility(View.GONE);
                     textViewTittle.setText("Chat");
                     break;

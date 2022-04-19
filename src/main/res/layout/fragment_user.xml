@@ -6,19 +6,17 @@
     android:background="#FAFAFA"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
-
-    <TextView
-        android:id="@+id/usernameonuserfragment"
+ <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
         android:text="User Name"
-        android:textColor="@android:color/black"
-        android:visibility="visible"
+        android:layout_marginTop="20dp"
         android:textSize="25sp"
-        android:textStyle="bold" />
-    <de.hdodenhof.circleimageview.CircleImageView
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/usernameonuserfragment"/>
+  <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/profile"
@@ -26,24 +24,24 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
         android:layout_marginTop="18dp"
-        tools:ignore="MissingClass" />
-    <androidx.recyclerview.widget.RecyclerView
+      tools:ignore="MissingClass" />
+ <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_below="@id/imageViewUser"
         android:layout_height="match_parent"
         android:layout_above="@id/logoutButton"
         android:id="@+id/recyclerViewUser"/>
 
-    <Button
-        android:id="@+id/logoutButton"
-        android:layout_width="700dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="120dp"
-        android:layout_marginRight="120dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/purple_700"
-        android:text="Log Out"
-        android:textColor="@android:color/white" />
+ <Button
+     android:id="@+id/logoutButton"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="120dp"
+     android:layout_marginRight="120dp"
+     android:layout_marginBottom="20dp"
+     android:backgroundTint="@color/purple_700"
+     android:text="Log Out"
+     android:textColor="@android:color/white" />
 
 </RelativeLayout>

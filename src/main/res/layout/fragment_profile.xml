@@ -13,7 +13,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
         android:background="@color/purple_700"
-        android:src="@drawable/ic_message_24">
+        android:outlineAmbientShadowColor="@color/white"
+        android:src="@drawable/camera">
 
     </ImageView>
 
@@ -51,13 +52,13 @@
         android:text="Save Profile"
         android:textColor="@color/white"
         tools:ignore="UnknownId"></android.widget.Button>
- <ProgressBar
-      android:id="@+id/progressbarofsetProfile"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/SaveProfile"
-      android:visibility="invisible"
-      tools:ignore="UnknownId">
- </ProgressBar>
+    <ProgressBar
+        android:id="@+id/progressbarofsetProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SaveProfile"
+        android:visibility="invisible"
+        tools:ignore="UnknownId">
+    </ProgressBar>
 </RelativeLayout>
 
